@@ -2,13 +2,20 @@ puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 
 height = gets.chomp.to_i
 
-i = "#"
+
+i = 1
+hash = "#"
+espace = " "
+j = height 
+
 
 puts "Voici la pyramide :"
 
 
 height.times do 
-    puts i
-    i = i + "#"
+    puts (espace*j) + (hash * i)
+    i = i + 1
+    j = j - 1 
+    
 end
 
