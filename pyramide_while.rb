@@ -4,11 +4,16 @@ height = gets.chomp.to_i
 
 i = 1
 
-puts "Voici la pyramide :"
+if height >25 or height <1
 
+	puts "La pyramide contient entre 1 et 25 étages."
 
-while i <= height
-    puts "#" * i
-    i = i + 1
+else
+	puts "Voici la pyramide :"
+
+	while i <= height
+    	puts "#" * i
+    	i = i + 1
+    end
     
 end
